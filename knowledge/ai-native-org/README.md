@@ -43,7 +43,10 @@ AI 工具的分发没有改变流程的执行者是谁——AI 提效了，但�
 
 **5. 解法：Structured Data + Skills + Pipeline**
 
+这是 AI-native 的方法论，也是传统 SOP 在 AI 时代的进化形式：
+
 ```
+Structured Data（输入输出的精确结构化）
 Structured Data（输入输出的精确结构化）
     ↓
 Skills（能力的原子化封装）

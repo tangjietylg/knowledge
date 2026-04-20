@@ -45,7 +45,9 @@ AI 没有这个能力：
 
 ## 解法：Structured Data + Skills + Pipeline
 
-| 传统流程组件 | AI-native 抽象 | 要求 |
+这是 AI-native 的方法论，也是传统 SOP 在 AI 时代的进化形式：
+
+| 传统 SOP 组件 | AI-native 抽象 | 要求 |
 |:---|:---|:---|
 | 输入/输出 | **Structured Data** | 精确、完整、结构化 |
 | 角色/工具 | **Skills** | 明确的输入输出格式 |
