@@ -43,7 +43,8 @@ context-engineering/
     ├── code-vs-script.md     # 代码与剧本的对比
     ├── context-structure.md  # 输入结构拆解
     ├── data-governance.md    # 数据治理
-    └── agent-modules.md      # Agent 侧子模块拆解
+    ├── agent-modules.md      # Agent 侧子模块拆解
+    └── skill-design-principles.md  # Skill 设计原则：从理论到实践
 ```
 
 ## 关联概念
