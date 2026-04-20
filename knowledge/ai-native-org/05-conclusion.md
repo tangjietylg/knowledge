@@ -98,6 +98,8 @@ Pipeline → 编排协作流程，定义时序和依赖
 
 ## 与Context Engineering的关联
 
+> 理论基础：[[../data-governance/02-core-concepts|Context Engineering 框架]]
+
 CE框架证明了：
 
 > 大模型输出的质量，由输入的上下文质量决定。

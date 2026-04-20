@@ -1,5 +1,8 @@
 # RAG 的局限
 
+> 相关阅读：[[llm-wiki|LLM-Wiki]] — 解法：离线结构化，在线查询
+> 相关阅读：[[code-vs-script|代码 vs 剧本]] — 代码天然结构化，剧本不是
+
 ## 核心问题：检索 ≠ 理解
 
 RAG（Retrieval-Augmented Generation）解决的是"用时现搜"的问题——当用户提出问题时，从大量文档中召回相关片段，拼进上下文。

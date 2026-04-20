@@ -1,5 +1,7 @@
 # Context Engineering
 
+> 上层应用：[[00-overview|AI-native 组织理论]] — 在 CE 框架基础上，解决"AI 能力如何在组织内流转"的问题
+
 ## 概念全景
 
 Context Engineering 是解决"AI 输入质量"问题的实践体系。
@@ -49,11 +51,12 @@ context-engineering/
 
 ## 关联概念
 
-- **LLM-Wiki**：领域知识库的结构化框架
-- **Context Structure**：LLM 输入的组成拆解
-- **Data Governance**：企业和个人必须自己做的数据治理工作
-- **RAG Limitations**：为什么"现搜"不够，必须"预结构化"
-- **Agent Modules**：Agent 侧五大子模块（Prompt Builder / Context Engine / Memory Manager / Retriever / Tool Integrator）
+- **[[llm-wiki|LLM-Wiki]]**：领域知识库的结构化框架
+- **[[context-structure|Context Structure]]**：LLM 输入的组成拆解
+- **[[data-governance|Data Governance]]**：企业和个人必须自己做的数据治理工作
+- **[[rag-limitations|RAG Limitations]]**：为什么"现搜"不够，必须"预结构化"
+- **[[agent-modules|Agent Modules]]**：Agent 侧五大子模块
+- **[[skill-design-principles|Skill 设计原则]]**：从 CE 框架到落地实践的桥梁
 
 ---
 

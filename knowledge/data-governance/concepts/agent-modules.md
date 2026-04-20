@@ -1,5 +1,8 @@
 # Agent 侧子模块
 
+> 相关阅读：[[context-structure]] — 完整的输入结构拆解
+> 相关阅读：[[../02-core-concepts|02-core-concepts]] — 三方责任框架
+
 ## 为什么需要拆解
 
 从输入视角看，Agent 不是铁板一块——它是多个子模块的协作系统，每个模块都参与决定"最终给 LLM 的是什么内容"。
@@ -93,3 +96,8 @@ Agent 侧子模块负责"**怎么组织输入**"：
 - 召回内容是否精准
 
 **两者结合，才能构建完整的 Context Engineering。**
+
+## 关联
+
+- [[context-structure]] — 完整的 LLM 输入六层拆解
+- [[../02-core-concepts|02-core-concepts]] — 三方责任框架

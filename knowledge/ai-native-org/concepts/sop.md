@@ -50,7 +50,6 @@ SOP 的三个要素，在 AI-native 时代需要精确的结构化表达：
 
 ## 关联概念
 
-- **Structured Data**：SOP 的内容层
-- **Skills**：SOP 的能力单元层
-- **Pipeline**：SOP 的执行引擎层
-- **Context Engineering**：数据治理的理论支撑
+- **[[../02-core-concepts|Structured Data / Skills / Pipeline]]**：SOP 的三层 AI-native 抽象
+- **[[../data-governance/02-core-concepts|Context Engineering]]**：数据治理的理论支撑——为什么结构化是前提
+- **[[../data-governance/concepts/context-structure|Context Structure]]**：输入结构拆解，解释"翻译层"瓶颈的根源

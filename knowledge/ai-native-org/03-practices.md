@@ -1,5 +1,8 @@
 # AI-native 游戏生产：实践方法
 
+> 完整论证：[[00-overview]]
+> 核心概念：[[02-core-concepts]]
+
 ## 核心原则
 
 **先实体化，后应用。**
@@ -60,7 +63,7 @@
 | 对话生成 Skill | NPC实体 | 对话树、语音规格 | NPC制作前 |
 | 规则实现 Skill | 规则实体 | 程序逻辑、数值配置 | 规则开发前 |
 
-**Skills 的设计原则见 `context-engineering/concepts/skill-design-principles.md`。**
+**Skills 的设计原则见 [[../data-governance/concepts/skill-design-principles|Skill 设计原则]]。**
 
 ### 第四步：Pipeline 编排
 

@@ -1,5 +1,7 @@
 # AI-native Organization
 
+> 底层理论：[[../data-governance/README|Context Engineering]] — CE 是地基，AI Org 是上层建筑
+
 ## 概念全景
 
 核心命题：**AI让每个人的能力大幅提升，但这些"个人能力的增长"没有汇聚成组织能力的增长——因为人在信息处理和交换环节成了AI的瓶颈。**
@@ -116,6 +118,8 @@ ai-native-org/
 ---
 
 ## 与 Context Engineering 的关联
+
+> 完整阅读：[[../data-governance/README|Context Engineering 框架]]
 
 CE 证明：**输出质量 = f(输入质量, 模型能力)**
 

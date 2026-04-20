@@ -1,5 +1,8 @@
 # Context Structure：LLM 输入拆解
 
+> 相关阅读：[[agent-modules]] — Agent 侧五大子模块详解
+> 相关阅读：[[../02-core-concepts|02-core-concepts]] — 三方责任框架
+
 ## 复合结构
 
 LLM 的输入不是单一的"问题"，而是一个**复合结构**，包含多个组成部分：
@@ -66,3 +69,8 @@ Harness 没有跳出这个范式，它只是在 **System Prompt + Tools Integrat
 Prompt Builder 的架构实现，本质上是一个**有序列表**——每次往里 inject 一段 context，列表扩大，上下文变厚，输出质量提升。
 
 核心价值是**可扩展性**：你不知道用户在哪个时刻需要什么补充信息，所以这套系统必须是开放的、插件式的。今天挂一个知识库召回，明天挂一个实时搜索结果，后天挂一个用户上传的文档——本质都是往列表里追加条目，与"Input 类型是开放的"这一思想一脉相承。
+
+## 关联
+
+- [[../02-core-concepts|02-core-concepts]] — 三方责任框架的完整推导
+- [[agent-modules]] — Agent 侧子模块（Retriever 连接 CE 与数据治理）

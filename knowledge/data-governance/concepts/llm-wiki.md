@@ -1,6 +1,8 @@
 # LLM-Wiki
 
 > **提出者：** Andrej Karpathy（OpenAI 联合创始人、前特斯拉 AI 总监），2026 年 4 月于 GitHub Gist 发布。
+> 
+> 相关阅读：[[rag-limitations|RAG 的局限]] — 理解为什么"现搜"不够
 
 ## 核心理念
 

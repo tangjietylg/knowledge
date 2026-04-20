@@ -1,5 +1,8 @@
 # AI-native 组织理论：核心概念
 
+> 完整论证：[[00-overview]]
+> 理论支撑：[[../data-governance/02-core-concepts|Context Engineering 框架]]
+
 ## 核心命题
 
 > **AI能力没有被组织化——因为组织的 SOP 还没有为 AI 量身定做。**
@@ -84,7 +87,7 @@ Structured Data → Skills加工 → Pipeline传递 → AI产出
 
 ## 关联概念
 
-- **Context Engineering**：数据治理的理论支撑
-- **Structured Data**：SOP 的内容层
-- **Skills**：SOP 的能力单元层
-- **Pipeline**：SOP 的执行引擎层
+- **[[sop|SOP]]**：核心概念的本质定义（SOP 三要素 + AI-native 进化）
+- **[[../data-governance/02-core-concepts|Context Engineering]]**：数据治理是 SOP AI-native 化的理论基础
+- **[[../data-governance/concepts/context-structure|Context Structure]]**：LLM 输入拆解，解释为什么"翻译层"是瓶颈
+- **[[../data-governance/concepts/skill-design-principles|Skill 设计原则]]**：Skills 封装的十大原则

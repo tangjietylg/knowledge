@@ -150,7 +150,6 @@ Schema定义的质量决定了实体网络的可用性——这是AI-native SOP�
 
 ## 关联概念
 
-- **Structured Data**：实体结构化
-- **Skills**：能力原子化
-- **Pipeline**：协作编排
-- **SOP**：AI-native组织的能力载体
+- **[[02-core-concepts|Structured Data / Skills / Pipeline]]**：核心三层抽象
+- **[[sop|SOP]]**：AI-native 组织的能力载体
+- **[[../data-governance/03-practices|数据治理实践]]**：Context Engineering 的落地方法

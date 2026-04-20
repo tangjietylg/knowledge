@@ -13,6 +13,8 @@
 
 ## RAG 为什么做不到
 
+> 相关阅读：[[rag-limitations]]
+
 RAG（Retrieval-Augmented Generation）是当前 AI 应用的主流范式——用户提问，从文档库召回相关片段，拼进上下文，LLM 生成回答。
 
 但这套方法在垂直领域深度应用中存在根本性局限：
@@ -32,6 +34,8 @@ RAG（Retrieval-Augmented Generation）是当前 AI 应用的主流范式——�
 无论召回策略多么精妙，"用时现搜"这个模式本身就决定了信息获取的上限。你不可能每次都重新读一遍剧本，但 RAG 每次都是从原始材料中现找。
 
 ## 代码的启示
+
+> 相关阅读：[[code-vs-script]]
 
 AI 在编程领域已经如鱼得水，原因不是 GitHub Copilot 用了什么黑科技，而在于**代码本身就是高度结构化的**。
 

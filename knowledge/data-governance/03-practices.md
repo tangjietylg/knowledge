@@ -1,5 +1,8 @@
 # 03 实践方法
 
+> 相关阅读：[[skill-design-principles]]（Skill 设计的十大原则）
+> 相关阅读：[[llm-wiki]]（LLM-Wiki 架构参考）
+
 ## 核心原则：先结构化，后应用
 
 Context Engineering 的实践分为两个阶段：
@@ -112,6 +115,8 @@ LLM 抽取的结果需要人工审核，确保：
 | 向量检索 | Milvus / Pinecone | 语义召回 |
 | 知识管理 | Obsidian / Logseq | 个人知识库可参考 |
 | 版本控制 | Git | 知识库也需要版本管理 |
+
+> 💡 Obsidian 正是我们当前知识库所使用的工具，[[llm-wiki|LLM-Wiki]] 理念与我们的实践高度吻合。
 
 ## 避坑指南
 

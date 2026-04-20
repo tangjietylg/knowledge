@@ -1,5 +1,8 @@
 # Data Governance：数据治理
 
+> 相关阅读：[[../02-core-concepts|02-core-concepts]] — 三方责任框架，数据治理是第三层
+> 相关阅读：[[../03-practices|03-practices]] — 数据治理的实践方法
+
 ## Context Engineering 的第三层
 
 Context Engineering 的输入由三部分构成：

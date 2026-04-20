@@ -1,6 +1,8 @@
 # AI能力为什么没有被组织化？
 
 > **核心命题：SOP 是组织的核心能力，是护城河。AI 能力还没有组织化，是因为组织的 SOP 还没有为 AI 量身定做。**
+> 
+> 核心概念详解：[[sop|SOP 的本质定义]]
 
 ---
 
@@ -83,3 +85,8 @@ Structured Data → Skills加工 → Pipeline传递 → AI产出
 ---
 
 > **SOP 是组织的核心能力，是护城河。Structured Data + Skills + Pipeline，让 SOP 为 AI 量身定做，让 AI 自动化跑起来。**
+
+## 关联概念
+
+- [[sop|SOP 的本质定义]] — 三要素、AI-native 进化、为什么游戏行业最需要
+- [[../data-governance/02-core-concepts|Context Engineering]] — 数据治理是 SOP AI-native 化的理论基础

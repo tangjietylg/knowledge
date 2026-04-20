@@ -1,5 +1,8 @@
 # 02 核心概念澄清
 
+> 相关阅读：[[context-structure]]（LLM 输入的完整拆解）
+> 相关阅读：[[agent-modules]]（Agent 侧五大子模块）
+
 ## Context Engineering 是什么
 
 **Context Engineering 是解决"AI 输入质量"问题的实践体系。**
@@ -93,3 +96,9 @@ LLM 的输入不是单一的"问题"，而是多层次的复合结构：
 ```
 
 **一旦 Retrieved Context 的质量上去了，模型能力和 Agent 技术的提升全是红利——而不是相反。**
+
+## 关联概念
+
+- [[data-governance]] — Context Engineering 的第三层，只有自己能做的那部分
+- [[context-structure]] — LLM 输入的完整六层拆解
+- [[agent-modules]] — Agent 侧五大子模块详解

@@ -143,6 +143,12 @@ Obsidian 可以换，OpenClaw 可以换，但这些原则不会过时。
 | 知识库侧没有标准答案 | Skill 提供推导方法，不提供标准 Schema |
 | 输入质量决定输出质量 | 入库即治理，问题越前置成本越低 |
 
+## 关联
+
+- [[../02-core-concepts|02-core-concepts]] — 三方责任框架
+- [[context-structure]] — LLM 输入拆解
+- [[llm-wiki|LLM-Wiki]] — 实践参考
+
 ---
 
 > **Summary：** 这个 skill 的目的不是给你一套拿来就用的流程，而是帮助你推导出属于自己的 Schema。工具可以换，原则不会变。
