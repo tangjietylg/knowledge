@@ -1,121 +1,113 @@
-# AI-native 组织理论：核心概念
-
-## 核心命题
-
-> **AI 能力的组织化，由知识网络的连接质量决定。**
-
-这个命题与 Context Engineering 一脉相承：
-- CE 解决的是 AI 输入质量问题
-- AI-native 组织解决的是 AI 能力如何通过网络产生乘积效应
-
----
+# AI-native 游戏生产：核心概念
 
 ## 核心洞察
 
-**Structured Data + Skills + Pipeline = AI-native SOP**
+**实体管理 + Skills + Pipeline = AI-native 游戏生产**
 
-这是 AI 时代的 SOP 形式，是让 AI 能力成为组织资产的核心抽象。
+不是文档管理，是**实体管理**。
 
 ---
 
-## 三层抽象
+## 三层核心抽象
 
-### 1. Structured Data（输入输出的结构化）
+### 1. 实体（Entity）
 
-**对应传统 SOP 中的：** 输入 + 输出 + 判断条件
+实体是游戏生产的基本单位：
 
-Structured Data 是 AI-native SOP 的根基——没有结构化，Pipeline 无法知道上一级的输出如何匹配下一级的输入。
+| 实体类型 | 元数据 | 交付物 |
+|:---|:---|:---|
+| 角色 | 性格、背景、关系、语音规格 | 角色设定、美术规格、程序接口 |
+| 场景 | 位置、氛围、规则、事件触发 | 场景描述、美术规格、程序逻辑 |
+| 道具 | 类型、效果、使用方式 | 道具规格、美术资源、程序逻辑 |
+| NPC | 身份、行为模式、对话树 | NPC设定、对话剧本、AI行为规格 |
+| 事件 | 触发条件、影响范围、后续剧情 | 事件规格、脚本、触发逻辑 |
+| 规则 | 游戏逻辑、数值体系、平衡性 | 规则文档、程序实现、测试用例 |
 
-```
-CE 视角：
-- Input 的每个组成部分都是 Structured Data
-- Retrieved Context 的质量取决于结构化程度
-- Schema 定义决定 Structured Data 的字段和类型
-
-AI-native SOP 视角：
-- Skills 的输入格式：Structured Data
-- Skills 的输出格式：Structured Data
-- Pipeline 的条件分支：Structured Data 的判断
-```
+**实体的特征：**
+- 结构化的（有 Schema）
+- 有元数据的（版本、状态、归属）
+- 有交付标准的（明确的产出规格）
+- 可被 Skills 处理的
+- LLM 维护的
 
 ### 2. Skills（能力的原子化单元）
 
-**对应传统 SOP 中的：** 角色 + 工具
-
-每个 Skill 是一个完整的 mini SOP：
-
-| 要素 | 说明 |
-|:---|:---|
-| 输入格式 | 明确的 Structured Data 格式 |
-| 输出格式 | 明确的 Structured Data 格式 |
-| 适用场景 | 什么情况下调用这个 Skill |
-| 边界限制 | 什么情况下不该用这个 Skill |
-
-Skills 是 Pipeline 的构建块，也是 Context Engineering 在 Skill 设计领域的延伸。
-
-**Skill Design Principles**（见 `concepts/skill-design-principles.md`）就是 Skills 的设计原则。
-
-### 3. Pipeline（能力的编排和连接）
-
-**对应传统 SOP 中的：** 步骤 + 时序关系
-
-Pipeline 把多个 Skills 连起来：
+Skills 是对实体的加工能力：
 
 ```
-Skills 之间的时序和依赖
-数据如何在 Skills 之间流转
-异常处理和分支逻辑
-条件分支的判断规则
+角色实体 + 角色规格 Skill → 美术规格 Skill → 程序接口 Skill
+场景实体 + 场景解析 Skill → 美术规格 Skill → 关卡逻辑 Skill
 ```
 
-Pipeline 是 SOP 在 AI-native 时代的执行引擎。
+每个 Skill 定义：
+- 输入格式（什么实体）
+- 输出格式（产出什么）
+- 适用场景
+- 边界限制
 
----
+**游戏行业的 Skills：**
 
-## 与传统 SOP 的对比
-
-| 维度 | 传统 SOP | AI-native SOP |
+| Skill 类型 | 处理 | 产出 |
 |:---|:---|:---|
-| **执行者** | 人 | AI |
-| **结构化对象** | 人的经验 | AI 能力的调用方式 |
-| **核心抽象** | 步骤 + 角色 + 工具 + 判断 | Structured Data + Skills + Pipeline |
-| **产出形式** | 文档/流程图 | 可执行的知识网络 |
-| **维护方式** | 人工更新 | 人机协同 |
-| **扩展性** | 受限于人的理解成本 | 节点越多，连接价值越大 |
-| **解决的核心问题** | 经验传承 | 连接建立 |
+| 角色解析 Skill | 角色实体 | 性格分析、关系图谱、美术要点 |
+| 场景解析 Skill | 场景实体 | 空间结构、氛围规格、美术要点 |
+| 美术规格 Skill | 解析结果 | 美术需求文档、参考资料规格 |
+| 程序接口 Skill | 美术规格 | 程序实现规格、AI行为规格 |
+| 对话生成 Skill | NPC实体 | 对话树、语音规格 |
+| 规则实现 Skill | 规则实体 | 程序逻辑、数值配置 |
+
+### 3. Pipeline（多工种协作的编排）
+
+Pipeline 把多个 Skills 串起来：
+
+```
+剧本 → 实体抽取 Pipeline → 角色/场景/道具实体
+                              ↓
+                         美术加工 Pipeline → 美术资产
+                              ↓
+                         程序接入 Pipeline → 程序资产
+                              ↓
+                         游戏世界
+```
+
+Pipeline 定义：
+- Skills 之间的时序和依赖
+- 数据如何在 Skills 之间流转
+- 异常处理和分支逻辑
 
 ---
 
-## SOP 是 AI-native 组织转型的最佳切入点
+## 与传统游戏生产的对比
 
-已有的 SOP 体系就是最好的起点：
-
-1. **SOP 本身已经是结构化的知识资产** — 经验已经被压缩成显性流程
-2. **SOP 有明确的使用场景和执行边界** — 升级成本低、风险低
-3. **SOP 的结构化维度与 AI-native 三层抽象天然对应**
-
-升级 SOP 的结构化程度，不需要从零开始，只需要把已有的 SOP 用 Structured Data + Skills + Pipeline 重新表达。
+| 维度 | 传统生产 | AI-native 生产 |
+|:---|:---|:---|
+| 基本单位 | 文档 | 实体 |
+| 信息载体 | 人的理解 | 结构化数据 |
+| 协作方式 | 人与人沟通 | Pipeline 流转 |
+| 维护方式 | 人工更新 | LLM + 人审核 |
+| 扩展性 | 受限于沟通成本 | 边际成本趋近于零 |
+| 核心瓶颈 | 沟通 | 结构化 |
 
 ---
 
 ## 先行者红利
 
-AI-native SOP 一旦建立并与知识网络打通：
+游戏行业的 AI-native 生产一旦建立：
 
 ```
-节点越多 → 每次调用的上下文越丰富 → 能力越强
-连接越密 → Skills 之间的协作越顺畅 → 效率越高
+实体越多 → 每次调用的上下文越丰富 → AI 产出越精确
+Pipeline 越成熟 → 多工种协作越顺畅 → 产能指数增长
 维护成本 → 随自动化程度下降
-积累价值 → 指数增长
+积累价值 → 时间壁垒，无法用资金购买
 ```
 
-**时间积累的优势是资金无法快速购买的。SOP 的成熟度就是证明。**
+**真正的护城河是时间积累的结构化资产，后来者无法复制。**
 
 ---
 
 ## 关联概念
 
-- **SOP**：AI-native 组织的能力载体（详见 `concepts/sop.md`）
+- **Structured Data**：实体的结构化形式（Schema + 元数据）
 - **Skill Design Principles**：Skills 的设计原则（详见 `context-engineering/concepts/skill-design-principles.md`）
-- **Structured Data**：SOP 的输入输出结构化形式
-- **Pipeline**：Skills 的编排逻辑，SOP 的执行引擎
+- **Pipeline**：Skills 的编排逻辑，多工种协作的执行引擎
+- **Context Engineering**：输入质量框架，是实体结构化的理论支撑
