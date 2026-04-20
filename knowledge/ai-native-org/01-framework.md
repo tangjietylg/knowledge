@@ -170,13 +170,41 @@ AI（生产者和维护者）：
 
 ---
 
-## 八、待完善点
+## 八、SOP：AI-native 组织的能力载体
+
+SOP 是 AI-native 组织转型中连接 CE 理论和组织落地的核心中间层：
+
+```
+Context Engineering（输入质量框架）
+    ↓
+Structured Data（知识结构化）
+    ↓
+Skill Design Principles（Skills 的设计原则）
+    ↓
+Pipeline（Skills 的编排）
+    ↓
+AI-native SOP（组织能力的载体）
+```
+
+| 传统 SOP 组件 | AI-native 抽象 | 职责 |
+|:---|:---|:---|
+| 步骤/输入/输出 | Structured Data | 输入输出的结构化 |
+| 角色/工具 | Skills | 能力的原子化单元 |
+| 时序/流程 | Pipeline | 能力的编排和连接 |
+
+详见：`concepts/sop.md`
+
+---
+
+## 九、待完善点
 
 - [ ] SOP 的结构化维度需要进一步拆解（步骤/角色/工具/判断/输入/输出）
-- [ ] SOP 和 CE Schema 的对应关系需要显性化
+- [ ] SOP 和 CE Schema 的对应关系需要显性化（已部分完成）
 - [ ] 实证案例：哪些企业的 SOP 已经做到 AI-native？
 - [ ] SOP 的维护成本 vs SOP 的价值，需要量化支撑
 - [ ] 过渡路径：企业如何从现状逐步建立知识网络？
+- [ ] Structured Data 的具体Schema设计方法
+- [ ] Skills 的设计原则如何落地到实际Skill开发
 
 ---
 
