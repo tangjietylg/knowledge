@@ -42,11 +42,13 @@ Structured Data（完整信息）
 
 ---
 
-## SOP = 数据 + 加工数据 + 传递数据
+## SOP 的本质
 
-**SOP 的原始定义：** 把「人的隐性经验」压缩成「可复制执行的显性流程」。
+**SOP（Standard Operating Procedure）**：把「人的隐性经验」压缩成「可复制执行的显性流程」。
 
-传统 SOP 的执行者是**人**，AI-native SOP 的执行者是**AI + Pipeline**。
+这是运营管理的标准概念——某个人做某件事做得特别好，把他的经验沉淀成一套步骤，让任何人都能照着执行，组织能力就这么复制出去了。
+
+传统 SOP 的执行者是**人**，AI-native SOP 的执行者是**AI + Pipeline**。AI 没有人的理解力——输入模糊，输出就随机；接口不标准，Pipeline 就断裂。SOP 的结构必须升级。
 
 **Structured Data + Skills + Pipeline = AI SOP：**
 
